@@ -1,10 +1,9 @@
 
 <p align="center">
 <img src="https://gatefy.com/wp-content/uploads/2021/02/how-to-identify-spam.jpg", width="800", height="800">
-</p>
 
 # DEDSEC_SPAM_TOOLS
-
+</p>
 ## SETUP
 * git clone https://github.com/Razzdedsecc/Spam
 * cd Spam
