@@ -6,6 +6,23 @@ from pystyle import *
 import random
 import string
 
+def login():
+    user = "Razz"
+    passwd = "Dedsec"
+    username = input("⚡ Username: ")
+    password = getpass.getpass(prompt='⚡ Password: ')
+    if username != user or password != passwd:
+        print("")
+        print("⚡ Salah, Hanya Anggota Dedsec yang bisa memakai tools ini: DEDSEC_COMMUNITY")
+        sys.exit(1)
+    elif username == user and password == passwd:
+        print("⚡ HELLO ANGGOTA DEDSEC <666 😈")
+        time.sleep(1)
+        
+        main()
+
+login()
+
 def generate_random_user_agent():
     operating_systems = [
         "Windows NT 10.0",
@@ -214,20 +231,3 @@ def menu():
         sys.exit('BYE BYE!')
 
 menu()
-
-def login():
-    user = "Razz"
-    passwd = "Dedsec"
-    username = input("⚡ Username: ")
-    password = getpass.getpass(prompt='⚡ Password: ')
-    if username != user or password != passwd:
-        print("")
-        print("⚡ Salah, Hanya Anggota Dedsec yang bisa memakai tools ini: DEDSEC_COMMUNITY")
-        sys.exit(1)
-    elif username == user and password == passwd:
-        print("⚡ HELLO ANGGOTA DEDSEC <666 😈")
-        time.sleep(1)
-        
-        main()
-
-login()
